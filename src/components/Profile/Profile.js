@@ -15,9 +15,8 @@ const Profile = (props) => {
     setAddBreak(addBreakInt);
   };
   return (
-    <div>
-      <p>{addToList.length}</p>
-      <div className="card mb-3 mt-5 border-0">
+    <div className="sticky-top">
+      <div className="card mb-3 mt-5 border-0 ">
         <div className="row">
           <div className="col-3">
             <img
