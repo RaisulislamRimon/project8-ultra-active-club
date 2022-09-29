@@ -21,9 +21,7 @@ const Exercise = (props) => {
             <h3 className="card-title">{name}</h3>
             <p className="card-text">{details}</p>
           </div>
-          <div class="card-footer">
-            <button className="btn btn-secondary">Add to list</button>
-          </div>
+          <button className="btn btn-primary mx-0">Add to list</button>
         </div>
       </div>
     </div>
