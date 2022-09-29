@@ -3,7 +3,7 @@ import React from "react";
 const Exercise = (props) => {
   // console.log(props.exercise);
   const { exercise, handleAddToList } = props;
-  const { id, name, details, img, time } = exercise;
+  const { name, details, img, time } = exercise;
   return (
     <div>
       <div className="col">

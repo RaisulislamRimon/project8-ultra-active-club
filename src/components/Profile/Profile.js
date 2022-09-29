@@ -1,23 +1,18 @@
 import React, { useState } from "react";
 
 const Profile = (props) => {
-  const { exercises, addToList } = props;
-  const [exerciseTime, setExerciseTime] = useState([]);
+  const { addToList } = props;
+  const [addBreak, setAddBreak] = useState(0);
 
   let total = 0;
+
   for (const exercise of addToList) {
     total = total + parseInt(exercise.time);
   }
-  console.log(total);
-  // setExerciseTime(total);
-
-  // console.log(exercises);
-  // console.log(addToList);
-
-  const [addBreak, setAddBreak] = useState(0);
-  // console.log(addBreak);
-  const handleAddBreak = () => {
-    console.log("clicked");
+  const handleAddBreak = (e) => {
+    const breakValue = e.target.innerText;
+    const addBreakInt = breakValue.slice(0, 2);
+    setAddBreak(addBreakInt);
   };
   return (
     <div>
@@ -50,31 +45,31 @@ const Profile = (props) => {
             onClick={handleAddBreak}
             className="btn btn-outline-success text-dark me-2"
           >
-            10s
+            <span>10s</span>
           </button>
           <button
             onClick={handleAddBreak}
             className="btn btn-outline-success text-dark me-2"
           >
-            20s
+            <span className="breakTime">20s</span>
           </button>
           <button
             onClick={handleAddBreak}
             className="btn btn-outline-success text-dark me-2"
           >
-            30s
+            <span className="breakTime">30s</span>
           </button>
           <button
             onClick={handleAddBreak}
             className="btn btn-outline-success text-dark me-2"
           >
-            40s
+            <span className="breakTime">40s</span>
           </button>
           <button
             onClick={handleAddBreak}
             className="btn btn-outline-success text-dark me-2"
           >
-            50s
+            <span className="breakTime">50s</span>
           </button>
         </div>
       </div>
