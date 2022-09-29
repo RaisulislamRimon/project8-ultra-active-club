@@ -3,7 +3,7 @@ import React from "react";
 const Exercise = (props) => {
   // console.log(props.exercise);
   const { exercise } = props;
-  const { name, details, img } = exercise;
+  const { name, details, img, time } = exercise;
   return (
     <div>
       <div className="col">
@@ -20,8 +20,11 @@ const Exercise = (props) => {
           <div className="card-body">
             <h3 className="card-title">{name}</h3>
             <p className="card-text">{details}</p>
+            <p className="card-text">
+              <span className="fw-semibold">Time required: {time}seconds</span>
+            </p>
           </div>
-          <button className="btn btn-primary mx-0">Add to list</button>
+          <button className="btn btn-primary mx-0 mt-3">Add to list</button>
         </div>
       </div>
     </div>

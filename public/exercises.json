@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Squats",
         "category": "muscle",
-        "time": "30",
+        "time": "10",
         "img": "https://img.freepik.com/premium-photo/attractive-handsome-bearded-man-holding-kettlebell-doing-squats-fitness-group-with-two-girls-modern-gym_232070-9107.jpg?w=740",
         "details" : "Squats are a very productive strength-training exercise that targets several muscle groups at once, including hamstrings, quadriceps and glute muscles. "
     },
@@ -11,7 +11,7 @@
         "id": "2",
         "name": "Planks",
         "category": "abs",
-        "time": "30",
+        "time": "20",
         "img": "https://images.pexels.com/photos/7592354/pexels-photo-7592354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "details": "Squats are a very productive strength-training exercise that targets several muscle groups at once, including hamstrings, quadriceps and glute muscles. "
     },
@@ -27,7 +27,7 @@
         "id": "4",
         "name": "Push-ups",
         "category": "muscle",
-        "time": "30",
+        "time": "35",
         "img": "https://img.freepik.com/free-photo/portrait-youg-afro-american-sports-man-doing-pushup-exercise_171337-8275.jpg?w=740&t=st=1664414067~exp=1664414667~hmac=d40331a6f0bc5ecdb4d44a4d41b3bb8a36bfece941ae1b3622bb5eeead55db9a",
         "details": "Push-ups are a very basic yet result-worthy exercise that involves several muscles while performing.Start with 3 sets of 10 reps.   "
     },
@@ -35,7 +35,7 @@
         "id": "5",
         "name": "Burpees",
         "category": "full body",
-        "time": "30",
+        "time": "25",
         "img": "https://cdn.pixabay.com/photo/2016/09/21/23/07/sport-1685975_960_720.jpg",
         "details":"Burpees are a super-effective, full-body exercise that offers great results for your cardiovascular strength.Stand upright with your feet."
     },
@@ -43,7 +43,7 @@
         "id": "6",
         "name": "Glute bridge",
         "category": "buttocks",
-        "time": "30",
+        "time": "15",
         "img": "https://media.istockphoto.com/photos/fitness-woman-doing-hip-workout-exercise-on-yoga-mat-at-studio-picture-id1163715607?k=20&m=1163715607&s=612x612&w=0&h=WDj7vpCuCNvv6IuQA9yZYY0lemUiouDhb1gfhFeLnzc=",
         "details":"It is one of the best exercises for your entire posterior chain that helps keep your buttocks strengthened and in shape.Lie on the floor on your back"
     }
