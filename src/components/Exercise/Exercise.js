@@ -25,7 +25,7 @@ const Exercise = (props) => {
             </p>
           </div>
           <button
-            onClick={() => handleAddToList(id)}
+            onClick={() => handleAddToList(exercise)}
             className="btn btn-primary mx-0 mt-3"
           >
             Add to list

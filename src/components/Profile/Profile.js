@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 
 const Profile = (props) => {
-  const { exercises } = props;
-  console.log(exercises);
+  const { exercises, addToList } = props;
+  const [exerciseTime, setExerciseTime] = useState([]);
+
+  let total = 0;
+  for (const exercise of addToList) {
+    total = total + parseInt(exercise.time);
+  }
+  console.log(total);
+  // setExerciseTime(total);
+
+  // console.log(exercises);
+  // console.log(addToList);
 
   const [addBreak, setAddBreak] = useState(0);
   // console.log(addBreak);
@@ -11,6 +21,7 @@ const Profile = (props) => {
   };
   return (
     <div>
+      <p>{addToList.length}</p>
       <div className="card mb-3 mt-5 border-0">
         <div className="row">
           <div className="col-3">
@@ -76,7 +87,7 @@ const Profile = (props) => {
             <h6 className="fw-bold">Exercise Time </h6>
           </div>
           <div className="col-6">
-            <p className="text-muted">0 seconds</p>
+            <p className="text-muted">{total} seconds</p>
           </div>
         </div>
 
