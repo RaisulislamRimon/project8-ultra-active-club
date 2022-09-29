@@ -23,6 +23,28 @@ const Profile = () => {
         <h6>◙ I am studying BSc in CSE</h6>
         <h6>◙ I am a student of Programming-Hero</h6>
       </div>
+      {/* add a break section  */}
+      <div className="mt-5">
+        <h5>Add A Break</h5>
+        <div>
+          <button className="btn btn-outline-success text-dark me-2">
+            10s
+          </button>
+          <button className="btn btn-outline-success text-dark me-2">
+            20s
+          </button>
+          <button className="btn btn-outline-success text-dark me-2">
+            30s
+          </button>
+          <button className="btn btn-outline-success text-dark me-2">
+            40s
+          </button>
+          <button className="btn btn-outline-success text-dark me-2">
+            50s
+          </button>
+        </div>
+      </div>
+      <div></div>
     </div>
   );
 };
