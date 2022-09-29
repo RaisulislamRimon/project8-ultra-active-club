@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <div className="container">
+      <div className="mx-4">
         <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a
             href="/"
