@@ -15,7 +15,11 @@ const Header = () => {
                 alt="logo"
                 width="70"
                 height="42"
+                className=""
               />
+              <span className="ms-2 text-primary fs-3 fw-normal">
+                Fitness Club
+              </span>
             </span>
           </a>
 
