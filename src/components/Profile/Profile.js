@@ -50,10 +50,19 @@ const Profile = () => {
 
         <div className="row mx-2 mt-4">
           <div className="col-6">
-            <h6 className="fw-bold">Exercise Time : </h6>
+            <h6 className="fw-bold">Exercise Time </h6>
           </div>
           <div className="col-6">
-            <p>0 seconds</p>
+            <p className="text-muted">0 seconds</p>
+          </div>
+        </div>
+
+        <div className="row mx-2 mt-2">
+          <div className="col-6">
+            <h6 className="fw-bold">Break Time </h6>
+          </div>
+          <div className="col-6">
+            <p className="text-muted">0 seconds</p>
           </div>
         </div>
       </div>
