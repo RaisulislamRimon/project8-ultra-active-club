@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const Profile = (props) => {
   const { addToList } = props;
@@ -13,6 +14,9 @@ const Profile = (props) => {
     const breakValue = e.target.innerText;
     const addBreakInt = breakValue.slice(0, 2);
     setAddBreak(addBreakInt);
+  };
+  const activityComplete = () => {
+    toast("Activity Completed");
   };
   return (
     <div className="sticky-top">
@@ -95,9 +99,13 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-      <button className="btn btn-primary btn-lg w-100 mt-4">
+      <button
+        onClick={activityComplete}
+        className="btn btn-primary btn-lg w-100 mt-4"
+      >
         Activity Completed
       </button>
+      <ToastContainer />
     </div>
   );
 };
