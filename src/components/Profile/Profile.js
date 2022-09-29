@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Profile = () => {
+  const [addBreak, setAddBreak] = useState(0);
+  console.log(addBreak);
   return (
     <div>
       <div class="card mb-3 mt-5 border-0">
@@ -63,7 +65,7 @@ const Profile = () => {
             <h6 className="fw-bold">Break Time </h6>
           </div>
           <div className="col-6">
-            <p className="text-muted">0 seconds</p>
+            <p className="text-muted">{addBreak} seconds</p>
           </div>
         </div>
       </div>
