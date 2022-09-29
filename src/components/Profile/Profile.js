@@ -44,7 +44,19 @@ const Profile = () => {
           </button>
         </div>
       </div>
-      <div></div>
+      {/* Exercise Details  */}
+      <div className="mt-5">
+        <h5>Exercise Details</h5>
+
+        <div className="row mx-2 mt-4">
+          <div className="col-6">
+            <h6 className="fw-bold">Exercise Time : </h6>
+          </div>
+          <div className="col-6">
+            <p>0 seconds</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
