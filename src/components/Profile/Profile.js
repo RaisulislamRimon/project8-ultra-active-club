@@ -16,7 +16,7 @@ const Profile = (props) => {
     setAddBreak(addBreakInt);
   };
   const activityComplete = () => {
-    toast("Activity Completed");
+    toast("Congratulations! Activity Completed.");
   };
   return (
     <div className="sticky-top">
