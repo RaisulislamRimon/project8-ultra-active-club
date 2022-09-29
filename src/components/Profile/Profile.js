@@ -57,6 +57,7 @@ const Profile = () => {
           </div>
         </div>
 
+        {/* break time  */}
         <div className="row mx-2 mt-2">
           <div className="col-6">
             <h6 className="fw-bold">Break Time </h6>
@@ -66,6 +67,9 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <button className="btn btn-primary btn-lg w-100 mt-4">
+        Activity Completed
+      </button>
     </div>
   );
 };
