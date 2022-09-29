@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Exercise from "../Exercise/Exercise";
 
-const Exercises = () => {
-  const [exercises, setExercises] = useState([]);
-
-  useEffect(() => {
-    fetch("exercises.json")
-      .then((res) => res.json())
-      .then((data) => setExercises(data));
-  }, []);
-
+const Exercises = (props) => {
+  console.log(props.exercises);
+  const { exercises } = props;
   return (
     <div className="container-fluid">
-      <h3>Select today's exercise</h3>
-      {exercises.map((exercise) => (
-        <Exercise exercise={exercise}></Exercise>
-      ))}
+      <h3>Simple exercises to keep your body fit</h3>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {exercises.map((exercise) => (
+          <Exercise key={exercise.id} exercise={exercise}></Exercise>
+        ))}
+      </div>
     </div>
   );
 };

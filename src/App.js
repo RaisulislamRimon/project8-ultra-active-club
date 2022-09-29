@@ -1,12 +1,12 @@
 import "./App.css";
-import Exercises from "./components/Exercises/Exercises";
 import Header from "./components/Header/Header";
+import MainClub from "./components/MainClub/MainClub";
 
 function App() {
   return (
     <div>
       <Header />
-      <Exercises />
+      <MainClub />
     </div>
   );
 }
