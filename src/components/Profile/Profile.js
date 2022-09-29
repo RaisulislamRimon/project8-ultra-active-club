@@ -18,6 +18,11 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h5 className="fw-semibold">About me : </h5>
+        <h6>◙ I am studying BSc in CSE</h6>
+        <h6>◙ I am a student of Programming-Hero</h6>
+      </div>
     </div>
   );
 };
