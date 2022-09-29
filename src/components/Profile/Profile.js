@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 
-const Profile = () => {
+const Profile = (props) => {
+  const { exercises } = props;
+  console.log(exercises);
+
   const [addBreak, setAddBreak] = useState(0);
-  console.log(addBreak);
+  // console.log(addBreak);
+  const handleAddBreak = () => {
+    console.log("clicked");
+  };
   return (
     <div>
-      <div class="card mb-3 mt-5 border-0">
+      <div className="card mb-3 mt-5 border-0">
         <div className="row">
           <div className="col-3">
             <img
@@ -15,8 +21,8 @@ const Profile = () => {
             />
           </div>
           <div className="col-9">
-            <h5 class="card-title">MD. Raisul Islam Rimon</h5>
-            <p class="card-text">Dhaka, Bangladesh</p>
+            <h5 className="card-title">MD. Raisul Islam Rimon</h5>
+            <p className="card-text">Dhaka, Bangladesh</p>
           </div>
         </div>
       </div>
@@ -29,19 +35,34 @@ const Profile = () => {
       <div className="mt-5">
         <h5>Add A Break</h5>
         <div>
-          <button className="btn btn-outline-success text-dark me-2">
+          <button
+            onClick={handleAddBreak}
+            className="btn btn-outline-success text-dark me-2"
+          >
             10s
           </button>
-          <button className="btn btn-outline-success text-dark me-2">
+          <button
+            onClick={handleAddBreak}
+            className="btn btn-outline-success text-dark me-2"
+          >
             20s
           </button>
-          <button className="btn btn-outline-success text-dark me-2">
+          <button
+            onClick={handleAddBreak}
+            className="btn btn-outline-success text-dark me-2"
+          >
             30s
           </button>
-          <button className="btn btn-outline-success text-dark me-2">
+          <button
+            onClick={handleAddBreak}
+            className="btn btn-outline-success text-dark me-2"
+          >
             40s
           </button>
-          <button className="btn btn-outline-success text-dark me-2">
+          <button
+            onClick={handleAddBreak}
+            className="btn btn-outline-success text-dark me-2"
+          >
             50s
           </button>
         </div>

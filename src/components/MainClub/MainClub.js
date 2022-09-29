@@ -9,14 +9,17 @@ const MainClub = () => {
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+  const handleAddToList = (id) => {
+    console.log("handleAddToList clicked", id);
+  };
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12 col-lg-8">
-          <Exercises exercises={exercises} />
+          <Exercises exercises={exercises} handleAddToList={handleAddToList} />
         </div>
         <div className="col-md-12 col-lg-4">
-          <Profile />
+          <Profile exercises={exercises} />
         </div>
       </div>
     </div>

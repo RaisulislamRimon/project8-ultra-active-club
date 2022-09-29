@@ -2,14 +2,18 @@ import React from "react";
 import Exercise from "../Exercise/Exercise";
 
 const Exercises = (props) => {
-  console.log(props.exercises);
-  const { exercises } = props;
+  // console.log(props.exercises);
+  const { exercises, handleAddToList } = props;
   return (
     <div className="container-fluid">
       <h3>Simple exercises to keep your body fit</h3>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {exercises.map((exercise) => (
-          <Exercise key={exercise.id} exercise={exercise}></Exercise>
+          <Exercise
+            key={exercise.id}
+            exercise={exercise}
+            handleAddToList={handleAddToList}
+          ></Exercise>
         ))}
       </div>
     </div>

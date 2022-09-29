@@ -2,8 +2,8 @@ import React from "react";
 
 const Exercise = (props) => {
   // console.log(props.exercise);
-  const { exercise } = props;
-  const { name, details, img, time } = exercise;
+  const { exercise, handleAddToList } = props;
+  const { id, name, details, img, time } = exercise;
   return (
     <div>
       <div className="col">
@@ -24,7 +24,12 @@ const Exercise = (props) => {
               <span className="fw-semibold">Time required: {time}seconds</span>
             </p>
           </div>
-          <button className="btn btn-primary mx-0 mt-3">Add to list</button>
+          <button
+            onClick={() => handleAddToList(id)}
+            className="btn btn-primary mx-0 mt-3"
+          >
+            Add to list
+          </button>
         </div>
       </div>
     </div>
