@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { addToDb } from "../../utilities/fakeDb";
 import Exercises from "../Exercises/Exercises";
 import Profile from "../Profile/Profile";
 
@@ -14,6 +15,7 @@ const MainClub = () => {
     // console.log("handleAddToList clicked", exercise);
     const newAddToList = [...addToList, exercise];
     setAddToList(newAddToList);
+    addToDb(exercise.time);
   };
   return (
     <div className="container-fluid">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
 const Profile = (props) => {
@@ -10,14 +10,24 @@ const Profile = (props) => {
   for (const exercise of addToList) {
     total = total + parseInt(exercise.time);
   }
+
   const handleAddBreak = (e) => {
     const breakValue = e.target.innerText;
     const addBreakInt = breakValue.slice(0, 2);
+    localStorage.setItem("break", addBreakInt);
     setAddBreak(addBreakInt);
   };
+  const display = () => {
+    localStorage.getItem("break");
+    setAddBreak(JSON.parse(localStorage.getItem("break")));
+  };
+  useEffect(() => {
+    display();
+  }, [addBreak]);
   const activityComplete = () => {
     toast("Congratulations! Activity Completed.");
   };
+
   return (
     <div className="sticky-top">
       <div className="card mb-3 mt-5 border-0 ">
@@ -95,7 +105,9 @@ const Profile = (props) => {
             <h6 className="fw-bold">Break Time </h6>
           </div>
           <div className="col-6">
-            <p className="text-muted">{addBreak} seconds</p>
+            <p className="text-muted">
+              {localStorage.getItem("break") ? addBreak : "0"} seconds
+            </p>
           </div>
         </div>
       </div>
